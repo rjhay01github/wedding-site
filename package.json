@@ -1,0 +1,21 @@
+{
+  "name": "wedding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "TAILWIND_MODE=watch postcss tailwind.css -o ./src/styles.css -w --verbose",
+    "build-prod": "NODE_ENV=production postcss tailwind.css -o ./src/styles.css",
+    "deploy": "gh-pages -d src -b gh-pages"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.5",
+    "cssnano": "^5.0.8",
+    "gh-pages": "^3.2.3",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.15"
+  }
+}
